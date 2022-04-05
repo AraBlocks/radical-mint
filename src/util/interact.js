@@ -70,8 +70,8 @@ export const getCurrentWalletConnected = async () => {
 
 
 //troublesome area below, trying to get it out of comments
-const { createAlchemyWeb3 } = require('@alch/alchemy-web3');
 /*
+const { createAlchemyWeb3 } = require('@alch/alchemy-web3');
 const alchemyKey = "https://eth-mainnet.alchemyapi.io/v2/" + "GetFromEnvironmentVariables";//TODO
 const web3 = createAlchemyWeb3(alchemyKey);
 
