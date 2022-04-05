@@ -1,0 +1,53 @@
+
+package.json notes
+
+[1] from last halloween:
+
+    "@alch/alchemy-web3": "^1.1.4",
+
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+
+    "dotenv": "^10.0.0",
+
+    "react": "^17.0.2",
+    "react-device-detect": "^2.1.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+
+    "web-vitals": "^1.0.1"
+
+[2] currently using (same except no dotenv)
+
+    "@alch/alchemy-web3": "^1.1.4",
+
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+
+    (no dotenv)
+
+    "react": "^17.0.2",
+    "react-device-detect": "^2.1.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+
+    "web-vitals": "^1.0.1"
+
+[3] from 2022mar create-react-app (still react 17, some things newer)
+
+    "@alch/alchemy-web3": "^1.3.0",
+
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+
+    "dotenv": "^16.0.0",
+
+    "react": "^17.0.2",
+    "react-device-detect": "^2.1.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0",
+
+    "web-vitals": "^2.1.4"
