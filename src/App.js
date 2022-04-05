@@ -13,7 +13,7 @@ function App() {
 	return (
 		<div className="App">
 			<p>Hello, radical-mint!</p>
-			<p>Date 2022apr5, Version 11</p>
+			<p>Date 2022apr5, Version 12</p>
 			<Wallet />
 		</div>
 	);
