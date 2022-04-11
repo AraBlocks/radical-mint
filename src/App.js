@@ -147,9 +147,14 @@ const Wallet = () => {
 					)}
 				</button>
 
+				<p>
+				Quantity: <input type="number" placeholder="1" min="1" max="500" value={mintQty} onChange={(e) => setMintQty(e.target.value)} />
+				</p>
+
+
 				<p id="status">{status}</p>
 
-				<button onClick={() => mintToken(walletAddress, 1).then((message) => { setMessage(message.status); })} >
+				<button onClick={() => mintToken(walletAddress, mintQty).then((message) => { setMessage(message.status); })} >
 					Mint NFT
 				</button>
 
