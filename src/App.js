@@ -4,32 +4,23 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { isDesktop } from 'react-device-detect';
 
-import logo from './logo.svg';
 import './App.css';
-//import Wallet from './components/wallet';
 
-/*
-import {
-	/*
-	CollectionContract,
-	setActive,
-	*/
-	/*
-	connectWallet,
-	mintToken,
-	getCurrentWalletConnected,
-	myFunFunction
-} from './util/interact.js';
-*/
-
-const onMainnet = true;//change to true to deploy
+const onMainnet = false; // false for develoment and testing on Rinkeby, set true to deploy to mainnet and production
 const onRinkeby = !onMainnet;
-
 const contractAddressOnRinkeby = "0xd80B07293C85C91A221B0538369994C70fb5cdBe";
 const contractAddressOnMainnet = "0x88954a16b93f296d3d993793143e2dcbc32222b2";
 const contractAddress = onMainnet ? contractAddressOnMainnet : contractAddressOnRinkeby;
 
 const log = console.log;
+
+
+
+
+
+
+
+
 
 
 const { createAlchemyWeb3 } = require('@alch/alchemy-web3');
@@ -52,12 +43,22 @@ set environment variables starting with REACT_APP_ there
 access it by process.env.REACT_APP_... in components
 */
 
+function snippet() {
+
+	console.log("hello from snippet");
+	console.log(process.env.REACT_APP_KEY);
+	console.log(process.env.REACT_APP_SECOND_KEY);
+	console.log(process.env.REACT_APP_KEY3);
+	console.log(process.env.REACT_APP_ALCHEMY.length);
+	console.log("^ hopefully you got three environment variables, and a length");
+
+	return "return value";
+}
+snippet();
 
 
 
 
-
-var s = myFunFunction();
 
 
 
@@ -162,17 +163,7 @@ const Wallet = () => {
 
 
 
-export function myFunFunction() {
 
-	console.log("hello from my fun function");
-	console.log(process.env.REACT_APP_KEY);
-	console.log(process.env.REACT_APP_SECOND_KEY);
-	console.log(process.env.REACT_APP_KEY3);
-	console.log(process.env.REACT_APP_ALCHEMY.length);
-	console.log("^ hopefully you got three environment variables, and a length");
-
-	return "return value";
-}
 
 export const getCurrentWalletConnected = async () => {
 	if (window.ethereum) {
@@ -340,4 +331,3 @@ function App() {
 }
 
 export default App;
-
