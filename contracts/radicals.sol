@@ -639,8 +639,8 @@ contract Radicals is ERC721Enumerable, Ownable {
     bool public isAllowListActive = false;
 
     uint256 public constant MAX_MINTSUPPLY = 10000;
-    uint256 public maximumAllowedTokensPerPurchase = 10000;
-    uint256 public allowListMaxMint = 10000;
+    uint256 public maximumAllowedTokensPerPurchase = 500;
+    uint256 public allowListMaxMint = 500;
 
     mapping(address => bool) private _allowList;
     mapping(address => uint256) private _allowListClaimed;
