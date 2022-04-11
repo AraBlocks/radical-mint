@@ -75,9 +75,7 @@ const Wallet = () => {
 		// const message = await loadCurrentMessage();
 		// setMessage(message);
 
-		/*
 		addSmartContractListener();
-		*/
 
 		const { address, status } = await getCurrentWalletConnected();
 		setMessage('Connected to MetaMask');
@@ -87,7 +85,6 @@ const Wallet = () => {
 		addWalletListener();
 	}, []);
 
-	/*
 	function addSmartContractListener() {
 		CollectionContract.events.AssetMinted({}, (error, data) => {
 			if (error) {
@@ -100,7 +97,6 @@ const Wallet = () => {
 			}
 		});
 	}
-	*/
 
 	function addWalletListener() {
 		if (window.ethereum) {
@@ -244,7 +240,7 @@ export const connectWallet = async () => {
 
 export const mintToken = async (address, qty) => {
 	log("hello from inside mint token");
-	/*
+
 	CollectionContract.handleRevert = true;
 	const costOfNFTS = qty * 123000000000;//matches price of 0.000000123 ETH
 	const checkTotal = await CollectionContract.methods.maximumAllowedTokensPerPurchase().call();
@@ -288,13 +284,11 @@ export const mintToken = async (address, qty) => {
 			status: 'Error: Insufficient Funds.'
 		};
 	}
-	*/
 };
-//TODO ok, but are the price and maximum quantity to mint also set in the contract?
 
 export const setActive = async () => {
 	log("hi from set active");
-	/*
+
 	const transactionParameters = {
 		to: contractAddress, // Required except during contract publications.
 		from: window.ethereum.selectedAddress, // must match user's active address.
@@ -316,7 +310,6 @@ export const setActive = async () => {
 			status: 'Error: Something went wrong: ' + error.message
 		};
 	}
-	*/
 };
 
 
@@ -329,7 +322,7 @@ function App() {
 	return (
 		<div className="App">
 			<p>Hello, radical-mint!</p>
-			<p>Date 2022apr11, Version 25</p>
+			<p>Date 2022apr11, Version 26</p>
 			<Wallet />
 		</div>
 	);
