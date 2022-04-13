@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+
+
+
+
+Wallet
+	connectWalletPressed
+	onUpdatePressed
+
+getCurrentWalletConnected
+
+connectWallet
+
+mintToken
+
+setActive
+
+
+
+
+
+
+
+
