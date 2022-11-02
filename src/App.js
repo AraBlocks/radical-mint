@@ -318,12 +318,48 @@ export const setActive = async () => {
 
 
 
+
+
+
+const EmailForm = () => {
+
+	const [email, setEmail] = useState("");
+	const [feedback, setFeedback] = useState("");
+
+	const onButtonSend = e => {
+		e.preventDefault();
+		console.log(email);
+	};
+
+	function onEmailChange(event) {
+		setFeedback(`Email length ${event.target.value.length} characters`)
+		setEmail(event.target.value);
+	}
+
+	return (
+		<div>
+			<form onSubmit={onButtonSend}>
+				<p>
+					<label>Email: <input type="text" name="email" value={email} onChange={onEmailChange} /></label>
+					<button>Send</button>
+				</p>
+				<p>{feedback}</p>
+			</form>
+		</div>
+	);
+};
+
+
+
+
+
 function App() {
 	return (
 		<div className="App">
 			<p>Hello, radical-mint!</p>
 			<p>Date 2022apr13, Version 27</p>
 			<Wallet />
+			<EmailForm />
 		</div>
 	);
 }
