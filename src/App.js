@@ -357,7 +357,7 @@ function App() {
 	return (
 		<div className="App">
 			<p>Hello, radical-mint!</p>
-			<p>Date 2022apr13, Version 27</p>
+			<p>Date 2022dec14, Version 28</p>
 			<Wallet />
 			<EmailForm />
 		</div>
