@@ -1,7 +1,7 @@
 {
   "name": "radical-mint",
   "version": "0.1.0",
-  "private": true,
+  "license": "MIT",
   "dependencies": {
     "@alch/alchemy-web3": "^1.1.4",
     "@testing-library/jest-dom": "^5.11.4",
