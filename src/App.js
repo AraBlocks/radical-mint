@@ -357,11 +357,13 @@ function App() {
 	return (
 		<div className="App">
 			<p>Hello, radical-mint!</p>
-			<p>Date 2022dec19, Version 1</p>
+			<p>Date 2022dec19, Version 3</p>
 			<Wallet />
-			<EmailForm />
 		</div>
 	);
 }
+/*
+			<EmailForm />
+*/
 
 export default App;
